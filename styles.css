@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-top: 15px;
+}
+
+p strong {
+    color: #2c3e50;
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Highlight Class */
+.highlight {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Italics */
+i {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+/* Date Styling */
+.date {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}

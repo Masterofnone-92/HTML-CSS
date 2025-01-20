@@ -1,16 +1,16 @@
-/* General Reset */
+/* General Reset */ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-size: medium;
 }
 
 body {
     line-height: 1.6;
     background-color: #f9f9f9;
-    color: #333;
+    color: #333333;
     padding: 20px;
 }
 
@@ -20,8 +20,77 @@ body {
     margin: 0 auto;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #8e44ad, #3498db);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(223, 224, 220, 0.91);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #f9f9f9;
+}
+
+header nav a {
+    color: #f9f9f9;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+header nav a:hover {
+    background: #f1c40f;
+    color: #2c3e50;
+}
+
+/* Footer Styling */
+footer {
+    background: #2c3e50;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Heading Styles */
@@ -52,6 +121,7 @@ p strong {
 p a {
     color: #3498db;
     text-decoration: none;
+    font-weight: bold;
 }
 
 p a:hover {
@@ -100,5 +170,13 @@ i {
 
     .container {
         padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 }
